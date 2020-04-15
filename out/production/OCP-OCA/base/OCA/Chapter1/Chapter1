@@ -1,0 +1,365 @@
+Java Basics
+OCA exam
+
+1. Which of the following method signatures is a valid declaration of an entry point in a
+Java application?
+
+B. public static void main()
+D. public static final void main(String[] mydata)
+
+2. The following class diagram demonstrates the relationship between Gold and Silver,
+   which extend the Metal class. Assume the attributes are all declared public. Which
+   statement about the diagram is not true?
+
+A. The diagram demonstrates platform independence in Java.
+
+3. What is the proper filename extension for a Java bytecode compiled file?
+C. .class
+
+4. Given that a Date class exists in both the java.util and java.sql packages, what is the
+result of compiling the following class?
+
+1: import java.util.*;
+2: import java.sql.*;
+3: public class BirthdayManager {
+4: private Date rob = new Date();
+5: private java.util.Date sharon = new java.util.Date();
+6: }
+
+D. The code compiles without issue.
+
+5. Which of the following is not a facet of traditional object-oriented programming languages?
+
+A. Objects are grouped as procedures, separate from the data they act on.
+
+6. Which variables have a scope limited to a method?
+
+D. Local variables
+
+7. Which package is imported into every Java class by default?
+
+A. java.util
+
+8. Which of the following is not a valid code comment in Java?
+D. /* Read file from system ****/
+
+9. Which statement about a valid .java file is true?
+
+B. It can contain one public class declaration and one public interface definition.
+C. It must define at least one public class.
+
+10. Given the following application, fill in the missing values in the table starting from the top
+and going downward.
+
+package competition;
+public class Robot {
+static String weight = "A lot";
+/* default */ double ageMonths = 5, ageDays = 2;
+private static boolean success = true;
+public void main(String[] args) {
+final String retries = "1";
+// P1
+}
+}
+
+C. 1 Class variable, 0 Instance variable, 1 local variable
+
+11. Which statement about import statements is true?
+
+B. Unused import statements can be removed from the class without causing a class to
+become unable to be compiled.
+
+12. What is the result of compiling and executing the following class?
+
+1: public class ParkRanger {
+2: int birds = 10;
+3: public static void main(String[] data) {
+4: int trees = 5;
+5: System.out.print(trees+birds);
+6: }
+7: }
+
+A. It does not compile.
+
+13. Which statements about Java are true?
+
+I. The java command can execute .java and .class files.
+II. Java is not object oriented.
+III. The javac command compiles directly into native machine code.
+
+B. III only
+
+14. Which of the following lines of code is not allowed as the first line of a Java class file?
+
+A. import widget.*;
+C. package sprockets;
+
+15. Which one of the following statements is true about using packages to organize your code
+in Java?
+
+A. Every class is required to include a package declaration.
+
+16. Given that the current directory is /user/home, with an application Java file in
+    /user/home/Manager.java that uses the default package, which are the correct commands
+    to compile and run the application in Java?
+
+B. javac Manager.java
+java Manager
+
+17. Structuring a Java class such that only methods within the class can access its instance
+variables is referred to as ___ .
+
+B. object orientation
+
+18. What is the output of the following code snippet?
+
+String tree = "pine";
+int count = 0;
+if (tree.equals("pine")) {
+int height = 55;
+count = count + 1;
+}
+
+D. It does not compile.
+
+19. Which of the following is true of a Java bytecode file?
+
+A. It can be run on any computer with a compatible JVM.
+
+20. What is the correct character for terminating a statement in Java?
+
+D. A semicolon (;)
+
+21. What is the result of compiling and executing the following class?
+
+1: public class Tolls {
+2: private static int yesterday = 1;
+3: int tomorrow = 10;
+4: public static void main(String[] args) {
+5: Tolls tolls = new Tolls();
+6: int today=20, tomorrow = 40;
+7: System.out.print(today + tolls.tomorrow + tolls.yesterday);
+8: }
+9: }
+
+C. 31
+
+22. Given the following class definition, which is the only line that does not contain a
+compilation error?
+1: public ThisClassDoesNotCompile {
+2: double int count;
+3: void errors() {}
+4: static void private limit; }
+
+B. Line 2
+
+23. Which of the following features allows a Java class to be run on a wide variety of computers
+and devices?
+
+D. Platform independence
+
+24. Which of the following is not a property of a JVM?
+
+D. It translates Java instructions to machine instructions.
+
+25. Which of the following variables are always in scope for the entire program?
+
+B. Class variables
+
+26. Given the following wildcard import statements, which class would be included in the
+import?
+
+import television.actor.*;
+import movie.director.*;
+
+A. television.actor.recurring.Marie
+
+27. Which is the correct order of statements for a Java class file?
+
+D. package statement, import statements, class declaration
+
+28. Given the following class definition, what is the maximum number of import statements
+that can be discarded and still have the code compile? For this question, assume that the
+Blackhole class is defined only in the stars package.
+
+package planetarium;
+import java.lang.*;
+import stars.*;
+import java.lang.Object;
+import stars.Blackhole;
+public class Observer {
+public void find(Blackhole blackhole) {}
+}
+
+B. One
+
+29. Given the following class definition, which command will cause the application to output
+    the message White-tailed?
+    package forest;
+    public class Deer {
+    public static void main(String... deerParams) {
+    System.out.print(theInput[2]);
+    }
+    }
+
+C. java forest.Deer Red deer White-tailed deer
+
+30. Which of the following is a true statement?
+
+B. The javac command compiles a .java file into a .class file.
+
+31. Which of the following statements about Java is true?
+
+B. Java allows method overloading.
+
+32. Given the following code, what values inserted in order into the blank lines, allow the code
+to compile?
+
+__ agent;
+public __ Banker {
+private static __ getMaxWithdrawal() {
+return 10;
+}
+}
+
+
+D. package, class, long
+
+33. What is the output of the following application?
+public class Airplane {
+static int start = 2;
+final int end;
+public Airplane(int x) {
+x = 4;
+end = x;
+}
+public void fly(int distance) {
+System.out.print(end-start+" ");
+System.out.print(distance);
+}
+public static void main(String... start) {
+new Airplane(10).fly(5);
+}
+}
+
+A. 2 5
+
+34. What is one of the most important reasons that Java supports extending classes via
+inheritance?
+
+D. Developers minimize duplicate code in new classes by sharing code in a common
+parent class.
+
+35. Which of the following is a valid code comment in Java?
+
+D. None of the above
+
+36. Which of the following method signatures is not a valid declaration of an entry point in a
+Java application?
+
+A. public static void main(String... arguments)
+D. public static void main(String[] arguments)
+
+37. Given the file Magnet.java below, which of the marked lines can you independently insert
+the line public String color; into and still have the code compile?
+// line a1
+public class Magnet {
+// line a2
+public void attach() {
+// line a3
+}
+// line a4
+}
+
+C. a2, a3, and a4
+
+38. What is required to define a valid Java class file?
+
+A. A class declaration
+
+39. What is the proper filename extension for a Java source file?
+
+D. .java
+
+40. Given that a Math class exists in both the java.lang and pocket.complex packages, what
+is the result of compiling the following class?
+1: package pocket;
+2: import pocket.complex.*;
+3: import java.util.*;
+4: public class Calculator {
+5: public static void main(String[] args) {
+6: System.out.print(Math.floor(5));
+7: }
+8: }
+
+A. The code does not compile because of line 2.
+
+41. Given a class that uses the following import statements, which class would not be automatically
+accessible within the class without using its full package name?
+
+import dog.*;
+import dog.puppy.*;
+
+D. java.lang.Object
+
+42. ___ is the technique of structuring programming data as a unit consisting of
+       attributes, with actions defined on the unit.
+
+B. Object orientation
+
+43. Given the following class definition, what is the maximum number of import statements
+    that can be discarded and still have the code compile? For this question, assume that the
+    Broccoli class is in the food.vegetables package, and the Apple class is the food.fruit
+    package.
+
+    package food;
+    import food.vegetables.*;
+    import food.fruit.*;
+    import java.util.Date;
+    public class Grocery {
+    Apple a; Broccoli b; Date c;
+    }
+
+    A. 0
+
+44. Given the following application, what is the expected output?
+
+public class Keyboard {
+private boolean numLock = true;
+static boolean capLock = false;
+public static void main(String... shortcuts) {
+System.out.print(numLock+" "+capLock);
+}
+}
+
+C. It does not compile.
+
+45. What is the result of compiling and executing the following class?
+
+public class RollerSkates {
+static int wheels = 1;
+int tracks = 5;
+public static void main(String[] arguments) {
+RollerSkates s = new RollerSkates();
+int feet=4, tracks = 15;
+System.out.print(feet + tracks + s.wheels);
+}
+}
+
+D. 20
+
+46. What is the result of compiling and executing the following class?
+package sports;
+public class Bicycle {
+String color = "red";
+private void printColor(String color) {
+color = "purple";
+System.out.print(color);
+}
+public static void main(String[] rider) {
+new Bicycle().printColor("blue");
+}
+}
+
+
+
